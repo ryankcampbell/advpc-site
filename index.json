@@ -1,0 +1,1295 @@
+{
+ "version": 1,
+ "title": "Adv Precalc",
+ "year": "2026-27",
+ "generated": "2026-10-29T21:11:03+00:00",
+ "rows": [
+  {
+   "kind": "unit",
+   "unit": 1,
+   "title": "Review, Polynomial & Rational Functions"
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-09-04",
+   "unit": 1,
+   "sec": "—",
+   "topic": "First day: course overview",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "review",
+   "date": "2026-09-08",
+   "unit": 1,
+   "sec": "Review",
+   "topic": "Factoring review",
+   "hw": "",
+   "assess": "Diagnostic"
+  },
+  {
+   "kind": "review",
+   "date": "2026-09-09",
+   "unit": 1,
+   "sec": "Review",
+   "topic": "Factoring practice",
+   "hw": "",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/1-2-factoring-day-2-ticket-1.pdf",
+     "hash": "198f75fb99b317cb28954aee6c02c492e103fadb1807c6f1c5ebd05dbd69026a"
+    }
+   ]
+  },
+  {
+   "kind": "review",
+   "date": "2026-09-11",
+   "unit": 1,
+   "sec": "Review",
+   "topic": "Parent functions",
+   "hw": "",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/1-3-parent-functions-ticket-1.pdf",
+     "hash": "3fc33c5ac923644fd3a25100817831f62da911b8cf368adc98bcd5f518ed7c8a"
+    }
+   ]
+  },
+  {
+   "kind": "review",
+   "date": "2026-09-15",
+   "unit": 1,
+   "sec": "Review",
+   "topic": "Exponential/logarithmic functions",
+   "hw": "",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/1-4-logs-day-1-ticket-1.pdf",
+     "hash": "3dd6b43ea595ae2676878cf8dd44e9932b141de08abc1fb3a4f218fd3ad0b0e9"
+    }
+   ]
+  },
+  {
+   "kind": "review",
+   "date": "2026-09-16",
+   "unit": 1,
+   "sec": "Review",
+   "topic": "Exp/log practice",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "review",
+   "date": "2026-09-18",
+   "unit": 1,
+   "sec": "Review",
+   "topic": "Exp/log applications",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "quiz",
+   "date": "2026-09-22",
+   "unit": 1,
+   "sec": "Quiz",
+   "topic": "Quiz 1: review topics",
+   "hw": "",
+   "assess": "Quiz 1"
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-09-23",
+   "unit": 1,
+   "sec": "§3.2",
+   "topic": "Polynomial functions and graphs",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-09-25",
+   "unit": 1,
+   "sec": "§3.2",
+   "topic": "Polynomial graphing practice",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-09-29",
+   "unit": 1,
+   "sec": "§3.3",
+   "topic": "Dividing polynomials",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-09-30",
+   "unit": 1,
+   "sec": "§3.4",
+   "topic": "Real zeros of polynomials",
+   "hw": "",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/3-4-real-zeroes-ticket-1.pdf",
+     "hash": "9b9a6288daca4131e53e07b23a3c6f64f6df306a6697567da6d6ac4c886bd306"
+    }
+   ]
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-10-02",
+   "unit": 1,
+   "sec": "§3.4",
+   "topic": "Rational root theorem",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-10-06",
+   "unit": 1,
+   "sec": "§3.5",
+   "topic": "Complex zeros and the fundamental theorem",
+   "hw": "",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/3-5-complex-zeroes-ticket-1.pdf",
+     "hash": "3834bc71ed177498db39bcfa46327b54507eb82c435d6df0d03f48080b1b1dbd"
+    }
+   ]
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-10-07",
+   "unit": 1,
+   "sec": "§3.5",
+   "topic": "Complex zeros practice",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-10-09",
+   "unit": 1,
+   "sec": "§3.6",
+   "topic": "Rational functions",
+   "hw": "",
+   "assess": "",
+   "quarto": {
+    "file": "q/3-6-rational-functions.html",
+    "hash": "4e0efbfde6ac8edf9a08befe1a9fd9abccd25a5e1e16c7bdcc18b9827f6d27fb",
+    "title": "§3.6 — Rational Functions"
+   }
+  },
+  {
+   "kind": "break",
+   "text": "No class 10/13 in-service"
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-10-14",
+   "unit": 1,
+   "sec": "§3.6",
+   "topic": "Rational function graphs",
+   "hw": "",
+   "assess": "",
+   "quarto": {
+    "file": "q/3-6-rational-functions.html",
+    "hash": "4e0efbfde6ac8edf9a08befe1a9fd9abccd25a5e1e16c7bdcc18b9827f6d27fb",
+    "title": "§3.6 — Rational Functions"
+   }
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-10-16",
+   "unit": 1,
+   "sec": "§3.6",
+   "topic": "Rational function applications",
+   "hw": "",
+   "assess": "",
+   "quarto": {
+    "file": "q/3-6-rational-functions.html",
+    "hash": "4e0efbfde6ac8edf9a08befe1a9fd9abccd25a5e1e16c7bdcc18b9827f6d27fb",
+    "title": "§3.6 — Rational Functions"
+   }
+  },
+  {
+   "kind": "unit",
+   "unit": 2,
+   "title": "Trigonometric Functions"
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-10-20",
+   "unit": 2,
+   "sec": "§5.1",
+   "topic": "The unit circle",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-10-21",
+   "unit": 2,
+   "sec": "§5.2",
+   "topic": "Trig functions of real numbers",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-10-23",
+   "unit": 2,
+   "sec": "§5.2",
+   "topic": "Trig function values",
+   "hw": "",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/3-2-trig-functions-ticket-1.pdf",
+     "hash": "d164247a2ea4929f5822f393bd2406698df34d980e2df0b6045fa2c918c22bd2"
+    }
+   ]
+  },
+  {
+   "kind": "quiz",
+   "date": "2026-10-27",
+   "unit": 2,
+   "sec": "Quiz",
+   "topic": "Quiz 2: polynomials, complex zeros, rationals",
+   "hw": "",
+   "assess": "Quiz 2"
+  },
+  {
+   "kind": "review",
+   "date": "2026-10-28",
+   "unit": 2,
+   "sec": "Review",
+   "topic": "Test 1 review",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-10-30",
+   "unit": 2,
+   "sec": "§5.3",
+   "topic": "Graphs of sine and cosine",
+   "hw": "p. 439: 1, 5, 7, 23, 25, 39, 43, 51, 59",
+   "assess": "",
+   "quarto": {
+    "file": "q/3-3-sin-cos-graph.html",
+    "hash": "c51b154c1597758410542d31c48a947ff7be1552d99ca0efea1d17627cca0cab",
+    "title": "§3.3 — Graphs of Sine and Cosine"
+   },
+   "tickets": [
+    {
+     "file": "p/3-3-sin-cos-graph-ticket-1.pdf",
+     "hash": "caa55f441a0182a7053842ed4dc330652db9bd916d3b5755ea52b53a5943b1f2"
+    }
+   ]
+  },
+  {
+   "kind": "test",
+   "date": "2026-11-03",
+   "unit": 2,
+   "sec": "Test",
+   "topic": "Test 1: review + polynomial and rational functions",
+   "hw": "",
+   "assess": "Test 1"
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-11-04",
+   "unit": 2,
+   "sec": "§5.3",
+   "topic": "Graphing sine and cosine: practice",
+   "hw": "",
+   "assess": "",
+   "quarto": {
+    "file": "q/3-3-sin-cos-graph.html",
+    "hash": "c51b154c1597758410542d31c48a947ff7be1552d99ca0efea1d17627cca0cab",
+    "title": "§3.3 — Graphs of Sine and Cosine"
+   }
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-11-06",
+   "unit": 2,
+   "sec": "§5.4",
+   "topic": "More trig graphs",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-11-10",
+   "unit": 2,
+   "sec": "§5.4",
+   "topic": "Tangent and cotangent graphs",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "break",
+   "text": "No class 11/11 Veterans Day"
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-11-13",
+   "unit": 2,
+   "sec": "§5.5",
+   "topic": "Inverse trig functions",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-11-17",
+   "unit": 2,
+   "sec": "§5.5",
+   "topic": "Inverse trig practice",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "quiz",
+   "date": "2026-11-18",
+   "unit": 2,
+   "sec": "Quiz",
+   "topic": "Quiz 3: §5.1–5.5",
+   "hw": "",
+   "assess": "Quiz 3"
+  },
+  {
+   "kind": "break",
+   "text": "No class 11/20 – 11/27 conferences and Fall Break"
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-12-01",
+   "unit": 2,
+   "sec": "§6.1",
+   "topic": "Radians",
+   "hw": "",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/3-6-radian-ticket-1.pdf",
+     "hash": "5c1d185d036fd40d2404228c6cc5c01568cffa889e332dedb2f53a6ccba96aca"
+    }
+   ]
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-12-02",
+   "unit": 2,
+   "sec": "§6.5",
+   "topic": "Law of sines",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-12-04",
+   "unit": 2,
+   "sec": "§6.5",
+   "topic": "Law of sines applications",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-12-08",
+   "unit": 2,
+   "sec": "§6.6",
+   "topic": "Law of cosines",
+   "hw": "",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/3-8-law-of-cosine-ticket-1.pdf",
+     "hash": "c52721d5579f83b25a5a4c046ddd805aa847dbbccde68eb51ac5ff990a476a09"
+    }
+   ]
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-12-09",
+   "unit": 2,
+   "sec": "§6.6",
+   "topic": "Law of cosines applications",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "lesson",
+   "date": "2026-12-11",
+   "unit": 2,
+   "sec": "Both",
+   "topic": "Triangle applications",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "quiz",
+   "date": "2026-12-15",
+   "unit": 2,
+   "sec": "Quiz",
+   "topic": "Quiz 4: radians, laws of sines and cosines",
+   "hw": "",
+   "assess": "Quiz 4"
+  },
+  {
+   "kind": "review",
+   "date": "2026-12-16",
+   "unit": 2,
+   "sec": "Review",
+   "topic": "Test 2 review",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "test",
+   "date": "2026-12-18",
+   "unit": 2,
+   "sec": "Test",
+   "topic": "Test 2: trigonometry",
+   "hw": "",
+   "assess": "Test 2"
+  },
+  {
+   "kind": "unit",
+   "unit": 3,
+   "title": "Analytic Trigonometry"
+  },
+  {
+   "kind": "break",
+   "text": "No class 12/21 – 1/1 Winter Break"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-01-05",
+   "unit": 3,
+   "sec": "§7.1",
+   "topic": "Trig identities",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-01-06",
+   "unit": 3,
+   "sec": "§7.1",
+   "topic": "Fundamental identities",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-01-08",
+   "unit": 3,
+   "sec": "§7.2",
+   "topic": "Addition and subtraction formulas",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "break",
+   "text": "No class 1/11 – 1/15 fall finals week and grading day (no Adv Precalc final)"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-01-19",
+   "unit": 3,
+   "sec": "§7.2",
+   "topic": "Sum/difference practice",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "quiz",
+   "date": "2027-01-20",
+   "unit": 3,
+   "sec": "Quiz",
+   "topic": "Quiz 5: §7.1–7.2",
+   "hw": "",
+   "assess": "Quiz 5"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-01-22",
+   "unit": 3,
+   "sec": "§7.3",
+   "topic": "Double- and half-angle formulas",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-01-26",
+   "unit": 3,
+   "sec": "§7.4",
+   "topic": "Basic trig equations",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "review",
+   "date": "2027-01-27",
+   "unit": 3,
+   "sec": "Review",
+   "topic": "Test 3 review",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "test",
+   "date": "2027-01-29",
+   "unit": 3,
+   "sec": "Test",
+   "topic": "Test 3: analytic trig",
+   "hw": "",
+   "assess": "Test 3"
+  },
+  {
+   "kind": "unit",
+   "unit": 4,
+   "title": "Limits (Stewart Calculus Ch 1)"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-02-02",
+   "unit": 4,
+   "sec": "§1.1",
+   "topic": "Four ways to represent a function",
+   "hw": "p.19: 3, 7, 10, 11, 13, 20, 25, 27, 29",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/4-1-four-ways-to-represent-a-function-ticket-1.pdf",
+     "hash": "41e61cf07aba8d4e09c2d938065903a9779df2d6d246caa4b0c52a8ee522ad95"
+    }
+   ],
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-1a-functions-catalog.html"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-02-03",
+   "unit": 4,
+   "sec": "§1.1",
+   "topic": "Functions practice",
+   "hw": "p.21: 31, 34, 39, 43, 45, 53, 55, 67, 69, 71, 73, 77, 79",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/4-1-four-ways-to-represent-a-function-ticket-2.pdf",
+     "hash": "605c7139afd4886950619ed5978d78940e649c4124ca806c5f27f2b363446452"
+    }
+   ],
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-1a-functions-catalog.html"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-02-05",
+   "unit": 4,
+   "sec": "§1.2",
+   "topic": "Mathematical models",
+   "hw": "p.33: 1, 3, 4, 5, 7, 10, 12",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/4-2-functions-ticket-1.pdf",
+     "hash": "ded03b6e4fd69806f03f0a1f9a4eff22578d3d7f28c4c4c941808ce50d0ccc4c"
+    }
+   ],
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-1a-functions-catalog.html#the-function-families"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-02-09",
+   "unit": 4,
+   "sec": "§1.2",
+   "topic": "Models practice",
+   "hw": "p.34: 17, 21, 25",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/4-2-functions-ticket-2.pdf",
+     "hash": "b03272da7c57d29950b131e0af29e0c9c0d23644573c511b6eeb2d0108c7f71a"
+    }
+   ],
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-1a-functions-catalog.html#the-function-families"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-02-10",
+   "unit": 4,
+   "sec": "§1.3",
+   "topic": "New functions from old",
+   "hw": "p.42: 1, 5, 7, 9, 11, 12, 19, 21",
+   "assess": "",
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-1b-transformations.html"
+  },
+  {
+   "kind": "break",
+   "text": "No class 2/12 in-service"
+  },
+  {
+   "kind": "quiz",
+   "date": "2027-02-16",
+   "unit": 4,
+   "sec": "§1.3",
+   "topic": "New functions practice",
+   "hw": "p.44: 31, 35ab, 39, 43, 49, 52abc, 53",
+   "assess": "Quiz 6",
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-1b-transformations.html"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-02-17",
+   "unit": 4,
+   "sec": "§1.4",
+   "topic": "Tangent and velocity",
+   "hw": "p.49: 2, 3v–3viii, 3b, 5i, 5iii, 5iv",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/4-4-tangent-and-velocity-ticket-1.pdf",
+     "hash": "07989575a4e75adbd87bce493328aa001a4428d326a4450c2df5e048f48c55c8"
+    }
+   ]
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-02-19",
+   "unit": 4,
+   "sec": "§1.5",
+   "topic": "The limit of a function",
+   "hw": "p.59: 1, 26, 7, 11, 17, 19, 25",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/4-5-limits-ticket-1.pdf",
+     "hash": "6936043f3da21b44168599d318f9b35b3da661417486e49b0d6f069437d7e269"
+    }
+   ],
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-2-limits.html#what-a-limit-is"
+  },
+  {
+   "kind": "quiz",
+   "date": "2027-02-23",
+   "unit": 4,
+   "sec": "§1.5",
+   "topic": "Limits practice",
+   "hw": "p.59: 9, 29, 31, 39, 40, 43",
+   "assess": "Quiz 7",
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-2-limits.html#what-a-limit-is"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-02-24",
+   "unit": 4,
+   "sec": "§1.6",
+   "topic": "Limit laws",
+   "hw": "p.70: 1, 2, 5, 11, 17, 19, 23, 25",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/4-6-limit-laws-ticket-1.pdf",
+     "hash": "1846c7b185aaa2e1c6c7b4902dfb2788cda2308a76c179ee85f047f0aa83d337"
+    }
+   ],
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-2-limits.html#the-laws"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-02-26",
+   "unit": 4,
+   "sec": "§1.6",
+   "topic": "Limit laws practice",
+   "hw": "p.71: 35, 37, 45, 46, 51, 53",
+   "assess": "",
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-2-limits.html#the-laws"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-03-02",
+   "unit": 4,
+   "sec": "§1.8",
+   "topic": "Continuity",
+   "hw": "p.91: 3, 4, 5, 17, 19, 21, 23, 27, 35, 37, 39, 43, 45, 53",
+   "assess": "",
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-3-continuity.html"
+  },
+  {
+   "kind": "quiz",
+   "date": "2027-03-03",
+   "unit": 4,
+   "sec": "Quiz",
+   "topic": "Quiz 8: §1.6–1.8",
+   "hw": "",
+   "assess": "Quiz 8"
+  },
+  {
+   "kind": "review",
+   "date": "2027-03-05",
+   "unit": 4,
+   "sec": "Review",
+   "topic": "Test 4 review",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "test",
+   "date": "2027-03-09",
+   "unit": 4,
+   "sec": "Test",
+   "topic": "Test 4: limits",
+   "hw": "",
+   "assess": "Test 4"
+  },
+  {
+   "kind": "unit",
+   "unit": 5,
+   "title": "Derivatives (Stewart Calculus Ch 2)"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-03-10",
+   "unit": 5,
+   "sec": "§2.1",
+   "topic": "Derivatives and rates of change",
+   "hw": "p.113: 3, 7, 8, 9, 11, 13, 17, 21, 22, 25, 27",
+   "assess": "",
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-4-derivative.html"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-03-12",
+   "unit": 5,
+   "sec": "§2.1",
+   "topic": "Derivatives practice",
+   "hw": "p.113: 33, 35, 37, 41, 43, 46, 47, 49, 51",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/2-1-derivatives-ticket-1.pdf",
+     "hash": "8cb4f700cf03636469c796feb53bd74989648781420c857f6626c83615a1fdff"
+    }
+   ],
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-4-derivative.html"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-03-16",
+   "unit": 5,
+   "sec": "§2.2",
+   "topic": "The derivative as a function",
+   "hw": "p.125: 1abc, 3, 5, 7, 9, 10, 11, 13, 17, 23",
+   "assess": "",
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-4-derivative.html"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-03-17",
+   "unit": 5,
+   "sec": "§2.2",
+   "topic": "Differentiability practice",
+   "hw": "p.127: 31, 39, 41, 45, 49, 51, 57",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/2-2-derivative-as-function-ticket-1.pdf",
+     "hash": "e2e457c925b1de9ab33a60cf898d15ddef713f0b14bc1b0e9d0646b8d7215946"
+    }
+   ],
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-4-derivative.html"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-03-19",
+   "unit": 5,
+   "sec": "§2.3",
+   "topic": "Differentiation formulas",
+   "hw": "p.140: 1, 3, 5, 7, 9, 11, 13, 17, 55, 63",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/2-3-derivative-rules-ticket-1.pdf",
+     "hash": "587b05306d17b968a2126ceb9a08faf927630c42359bb1ad68addf2c1fece677"
+    }
+   ],
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-5-formulae.html"
+  },
+  {
+   "kind": "break",
+   "text": "No class 3/22 – 4/2 Spring Break"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-04-06",
+   "unit": 5,
+   "sec": "§2.3",
+   "topic": "Power and constant rules",
+   "hw": "p.140: 25, 27, 29, 35, 37, 39, 43, 51, 61",
+   "assess": "",
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-5-formulae.html"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-04-07",
+   "unit": 5,
+   "sec": "§2.3",
+   "topic": "Sum/difference rule practice",
+   "hw": "p.142: 67, 69, 71, 73, 75, 77, 79, 89",
+   "assess": "",
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-5-formulae.html"
+  },
+  {
+   "kind": "break",
+   "text": "No class 4/9 grading day"
+  },
+  {
+   "kind": "quiz",
+   "date": "2027-04-13",
+   "unit": 5,
+   "sec": "Quiz",
+   "topic": "Quiz 9: basic differentiation",
+   "hw": "",
+   "assess": "Quiz 9"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-04-14",
+   "unit": 5,
+   "sec": "§2.4",
+   "topic": "Trig derivatives",
+   "hw": "p.150: 1, 3, 5, 7, 9, 11, 13, 15, 21",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/2-4-trig-derivatives-ticket-1.pdf",
+     "hash": "af7973acc81a74a447aca55f9e17f4fe46b661c303e7e24ad69392023ba83ee7"
+    }
+   ],
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-6-trig-chain.html"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-04-16",
+   "unit": 5,
+   "sec": "§2.4",
+   "topic": "Trig derivatives practice",
+   "hw": "p.150: 25, 27, 29, 33, 39, 41, 43, 47, 51",
+   "assess": "",
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-6-trig-chain.html"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-04-20",
+   "unit": 5,
+   "sec": "§2.5",
+   "topic": "The chain rule",
+   "hw": "p.158: 7, 11, 13, 15, 17, 21, 23, 25, 31, 35, 37",
+   "assess": "",
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-6-trig-chain.html"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-04-21",
+   "unit": 5,
+   "sec": "§2.5",
+   "topic": "Chain rule practice",
+   "hw": "p.158: 51, 55, 59, 61, 67, 73, 75",
+   "assess": "",
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-6-trig-chain.html"
+  },
+  {
+   "kind": "quiz",
+   "date": "2027-04-23",
+   "unit": 5,
+   "sec": "Quiz",
+   "topic": "Quiz 10: chain rule",
+   "hw": "",
+   "assess": "Quiz 10"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-04-27",
+   "unit": 5,
+   "sec": "§2.6",
+   "topic": "Implicit differentiation",
+   "hw": "p.166: 1, 5, 9, 11, 15, 17, 27",
+   "assess": "",
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-7a-implicit.html"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-04-28",
+   "unit": 5,
+   "sec": "§2.6",
+   "topic": "Implicit differentiation practice",
+   "hw": "p.167: 31, 35, 37, 39",
+   "assess": "",
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-7a-implicit.html"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-04-30",
+   "unit": 5,
+   "sec": "§2.8",
+   "topic": "Related rates",
+   "hw": "p.185: 3, 7, 9, 13, 15",
+   "assess": "",
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-7b-related-rates.html"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-05-04",
+   "unit": 5,
+   "sec": "§2.8",
+   "topic": "Related rates practice",
+   "hw": "p.185: 21, 25, 33, 45",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/2-8-related-rates-ticket-1.pdf",
+     "hash": "b351e2eb8b3eadcde3ca8fb6c45e471476646dbfa2350bee1ea359c97c019428"
+    }
+   ],
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-7b-related-rates.html"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-05-05",
+   "unit": 5,
+   "sec": "§2.8",
+   "topic": "Related rates, day 3",
+   "hw": "",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/2-8-related-rates-ticket-2.pdf",
+     "hash": "63a23559b5b999e6f6646dd42e392ad9777bb68f67ed96b5c7cd883e6280a654"
+    }
+   ],
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-7b-related-rates.html"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-05-07",
+   "unit": 5,
+   "sec": "§2.8",
+   "topic": "Related rates, day 4",
+   "hw": "",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/2-8-related-rates-ticket-3.pdf",
+     "hash": "83c3f32a6d41227bb9452cd568c5c683cc9e1c53fc9c6ca0b4c226f3b31f1615"
+    }
+   ],
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-7b-related-rates.html"
+  },
+  {
+   "kind": "quiz",
+   "date": "2027-05-11",
+   "unit": 5,
+   "sec": "Quiz",
+   "topic": "Not-quiz: related rates",
+   "hw": "",
+   "assess": "Not-quiz"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-05-12",
+   "unit": 5,
+   "sec": "§2.9",
+   "topic": "Linear approximation",
+   "hw": "p.192: 1, 5, 7, 11, 15, 19",
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/2-9-linear-approx-ticket-1.pdf",
+     "hash": "207b793486325c3e7a08caece41e42615c3947715f3df6ad242153e10b2a379b"
+    }
+   ],
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-8-linearize-taylor.html#linearization"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-05-14",
+   "unit": 5,
+   "sec": "§2.9",
+   "topic": "Linear approximation practice",
+   "hw": "p.193: 23, 31, 32, 33, 34",
+   "assess": "",
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-8-linearize-taylor.html#linearization"
+  },
+  {
+   "kind": "lesson",
+   "date": "2027-05-18",
+   "unit": 5,
+   "sec": "§2.10",
+   "topic": "Taylor polynomials",
+   "hw": "",
+   "assess": "",
+   "quarto": {
+    "file": "q/2-10-taylor-polynomials.html",
+    "hash": "4ecdf4d36b73071512febf52b5d7e04a40a004f4a073dc471cf7d023d3e7f0c4",
+    "title": "§2.10 — Taylor Polynomials"
+   },
+   "tickets": [
+    {
+     "file": "p/2-10-taylor-polynomials-ticket-1.pdf",
+     "hash": "dcd454740a8437d74cf29424e1d33bcc98fbb2ff290c46394fb350e0177a2853"
+    }
+   ],
+   "calc": "https://ryankcampbell.github.io/calc-site/q/1-8-linearize-taylor.html#maclaurin-and-taylor-series"
+  },
+  {
+   "kind": "review",
+   "date": "2027-05-19",
+   "unit": 5,
+   "sec": "Review",
+   "topic": "Test 5 review",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "test",
+   "date": "2027-05-21",
+   "unit": 5,
+   "sec": "Test",
+   "topic": "Test 5: derivatives",
+   "hw": "",
+   "assess": "Test 5"
+  },
+  {
+   "kind": "open",
+   "date": "2027-05-25",
+   "unit": 5,
+   "sec": "",
+   "topic": "",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "open",
+   "date": "2027-05-26",
+   "unit": 5,
+   "sec": "",
+   "topic": "",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "open",
+   "date": "2027-05-28",
+   "unit": 5,
+   "sec": "",
+   "topic": "",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "open",
+   "date": "2027-06-01",
+   "unit": 5,
+   "sec": "",
+   "topic": "",
+   "hw": "",
+   "assess": ""
+  },
+  {
+   "kind": "open",
+   "date": "2027-06-02",
+   "unit": 5,
+   "sec": "",
+   "topic": "",
+   "hw": "",
+   "assess": ""
+  }
+ ],
+ "files": [
+  {
+   "key": "Days/Unit 1 - Algebra and Log Review/1.2 - Factoring Day 2/warmup/warmup1.2.pdf",
+   "file": "p/1-2-factoring-day-2-ticket-1.pdf",
+   "hash": "198f75fb99b317cb28954aee6c02c492e103fadb1807c6f1c5ebd05dbd69026a",
+   "bytes": 54882
+  },
+  {
+   "key": "Days/Unit 1 - Algebra and Log Review/1.3-Parent Functions/warmup1.7/warmup.pdf",
+   "file": "p/1-3-parent-functions-ticket-1.pdf",
+   "hash": "3fc33c5ac923644fd3a25100817831f62da911b8cf368adc98bcd5f518ed7c8a",
+   "bytes": 150294
+  },
+  {
+   "key": "Days/Unit 1 - Algebra and Log Review/1.4 - Logs Day 1/warmup/warmup.pdf",
+   "file": "p/1-4-logs-day-1-ticket-1.pdf",
+   "hash": "3dd6b43ea595ae2676878cf8dd44e9932b141de08abc1fb3a4f218fd3ad0b0e9",
+   "bytes": 76245
+  },
+  {
+   "key": "Days/Unit 2 - Rational Expressions/3.4-Real Zeroes/warmup/warmup.pdf",
+   "file": "p/3-4-real-zeroes-ticket-1.pdf",
+   "hash": "9b9a6288daca4131e53e07b23a3c6f64f6df306a6697567da6d6ac4c886bd306",
+   "bytes": 91256
+  },
+  {
+   "key": "Days/Unit 2 - Rational Expressions/3.5-Complex Zeroes/warmup/warmup.pdf",
+   "file": "p/3-5-complex-zeroes-ticket-1.pdf",
+   "hash": "3834bc71ed177498db39bcfa46327b54507eb82c435d6df0d03f48080b1b1dbd",
+   "bytes": 68036
+  },
+  {
+   "key": "Days/Unit 2 - Rational Expressions/3.6-Rational Functions/quarto/3-6-rational-functions.html",
+   "file": "q/3-6-rational-functions.html",
+   "hash": "4e0efbfde6ac8edf9a08befe1a9fd9abccd25a5e1e16c7bdcc18b9827f6d27fb",
+   "bytes": 4436661,
+   "title": "§3.6 — Rational Functions"
+  },
+  {
+   "key": "Days/Unit 3- Trig/3.2-Trig Functions/day2/warmup_day2.pdf",
+   "file": "p/3-2-trig-functions-ticket-1.pdf",
+   "hash": "d164247a2ea4929f5822f393bd2406698df34d980e2df0b6045fa2c918c22bd2",
+   "bytes": 71672
+  },
+  {
+   "key": "Days/Unit 3- Trig/3.3-Sin:cos graph/quarto/3-3-sin-cos-graphs.html",
+   "file": "q/3-3-sin-cos-graph.html",
+   "hash": "c51b154c1597758410542d31c48a947ff7be1552d99ca0efea1d17627cca0cab",
+   "bytes": 3687040,
+   "title": "§3.3 — Graphs of Sine and Cosine"
+  },
+  {
+   "key": "Days/Unit 3- Trig/3.3-Sin:cos graph/ticket/warmup.pdf",
+   "file": "p/3-3-sin-cos-graph-ticket-1.pdf",
+   "hash": "caa55f441a0182a7053842ed4dc330652db9bd916d3b5755ea52b53a5943b1f2",
+   "bytes": 83993
+  },
+  {
+   "key": "Days/Unit 3- Trig/3.6-radian/warmup/warmup.pdf",
+   "file": "p/3-6-radian-ticket-1.pdf",
+   "hash": "5c1d185d036fd40d2404228c6cc5c01568cffa889e332dedb2f53a6ccba96aca",
+   "bytes": 61493
+  },
+  {
+   "key": "Days/Unit 3- Trig/3.8-law of cosine/warmup.pdf",
+   "file": "p/3-8-law-of-cosine-ticket-1.pdf",
+   "hash": "c52721d5579f83b25a5a4c046ddd805aa847dbbccde68eb51ac5ff990a476a09",
+   "bytes": 78697
+  },
+  {
+   "key": "Days/Unit 4 - Limits/4.1-Four Ways to Represent a Function/Warmup/warmup1.1.pdf",
+   "file": "p/4-1-four-ways-to-represent-a-function-ticket-1.pdf",
+   "hash": "41e61cf07aba8d4e09c2d938065903a9779df2d6d246caa4b0c52a8ee522ad95",
+   "bytes": 90889
+  },
+  {
+   "key": "Days/Unit 4 - Limits/4.1-Four Ways to Represent a Function/gegebra activity/warmup1.1.pdf",
+   "file": "p/4-1-four-ways-to-represent-a-function-ticket-2.pdf",
+   "hash": "605c7139afd4886950619ed5978d78940e649c4124ca806c5f27f2b363446452",
+   "bytes": 92916
+  },
+  {
+   "key": "Days/Unit 4 - Limits/4.2-Functions/Warmup/warmup1.2.pdf",
+   "file": "p/4-2-functions-ticket-1.pdf",
+   "hash": "ded03b6e4fd69806f03f0a1f9a4eff22578d3d7f28c4c4c941808ce50d0ccc4c",
+   "bytes": 510548
+  },
+  {
+   "key": "Days/Unit 4 - Limits/4.2-Functions/Warmup 2/warmup1.2b.pdf",
+   "file": "p/4-2-functions-ticket-2.pdf",
+   "hash": "b03272da7c57d29950b131e0af29e0c9c0d23644573c511b6eeb2d0108c7f71a",
+   "bytes": 62654
+  },
+  {
+   "key": "Days/Unit 4 - Limits/4.4-Tangent and Velocity/exit ticket day2/exit.pdf",
+   "file": "p/4-4-tangent-and-velocity-ticket-1.pdf",
+   "hash": "07989575a4e75adbd87bce493328aa001a4428d326a4450c2df5e048f48c55c8",
+   "bytes": 68023
+  },
+  {
+   "key": "Days/Unit 4 - Limits/4.5-Limits/Warmup/warmup1.5.pdf",
+   "file": "p/4-5-limits-ticket-1.pdf",
+   "hash": "6936043f3da21b44168599d318f9b35b3da661417486e49b0d6f069437d7e269",
+   "bytes": 56315
+  },
+  {
+   "key": "Days/Unit 4 - Limits/4.6-Limit Laws/Warmup/warmup1.6.pdf",
+   "file": "p/4-6-limit-laws-ticket-1.pdf",
+   "hash": "1846c7b185aaa2e1c6c7b4902dfb2788cda2308a76c179ee85f047f0aa83d337",
+   "bytes": 80257
+  },
+  {
+   "key": "Days/Unit 5- Derivatives/2.1 Derivatives/warmup_day3/wu2.1.pdf",
+   "file": "p/2-1-derivatives-ticket-1.pdf",
+   "hash": "8cb4f700cf03636469c796feb53bd74989648781420c857f6626c83615a1fdff",
+   "bytes": 67709
+  },
+  {
+   "key": "Days/Unit 5- Derivatives/2.2 Derivative as function/warmup-day 2/wu.pdf",
+   "file": "p/2-2-derivative-as-function-ticket-1.pdf",
+   "hash": "e2e457c925b1de9ab33a60cf898d15ddef713f0b14bc1b0e9d0646b8d7215946",
+   "bytes": 94503
+  },
+  {
+   "key": "Days/Unit 5- Derivatives/2.3 Derivative rules/Warmup/w2.3.pdf",
+   "file": "p/2-3-derivative-rules-ticket-1.pdf",
+   "hash": "587b05306d17b968a2126ceb9a08faf927630c42359bb1ad68addf2c1fece677",
+   "bytes": 57144
+  },
+  {
+   "key": "Days/Unit 5- Derivatives/2.4 Trig Derivatives/Warmup/w2.4.pdf",
+   "file": "p/2-4-trig-derivatives-ticket-1.pdf",
+   "hash": "af7973acc81a74a447aca55f9e17f4fe46b661c303e7e24ad69392023ba83ee7",
+   "bytes": 83949
+  },
+  {
+   "key": "Days/Unit 5- Derivatives/2.8 Related Rates/Entry Tickets/On Day 2/etday2.pdf",
+   "file": "p/2-8-related-rates-ticket-1.pdf",
+   "hash": "b351e2eb8b3eadcde3ca8fb6c45e471476646dbfa2350bee1ea359c97c019428",
+   "bytes": 23748
+  },
+  {
+   "key": "Days/Unit 5- Derivatives/2.8 Related Rates/Entry Tickets/On Day 3/etday3.pdf",
+   "file": "p/2-8-related-rates-ticket-2.pdf",
+   "hash": "63a23559b5b999e6f6646dd42e392ad9777bb68f67ed96b5c7cd883e6280a654",
+   "bytes": 24569
+  },
+  {
+   "key": "Days/Unit 5- Derivatives/2.8 Related Rates/Entry Tickets/On Day 4/etday3.pdf",
+   "file": "p/2-8-related-rates-ticket-3.pdf",
+   "hash": "83c3f32a6d41227bb9452cd568c5c683cc9e1c53fc9c6ca0b4c226f3b31f1615",
+   "bytes": 24345
+  },
+  {
+   "key": "Days/Unit 5- Derivatives/2.9 Linear Approx/Entry Ticket/etday1.pdf",
+   "file": "p/2-9-linear-approx-ticket-1.pdf",
+   "hash": "207b793486325c3e7a08caece41e42615c3947715f3df6ad242153e10b2a379b",
+   "bytes": 94330
+  },
+  {
+   "key": "Days/Unit 5- Derivatives/2.10 Taylor Polynomials/quarto/2-10-taylor-polynomials.html",
+   "file": "q/2-10-taylor-polynomials.html",
+   "hash": "4ecdf4d36b73071512febf52b5d7e04a40a004f4a073dc471cf7d023d3e7f0c4",
+   "bytes": 3778621,
+   "title": "§2.10 — Taylor Polynomials"
+  },
+  {
+   "key": "Days/Unit 5- Derivatives/2.10 Taylor Polynomials/tiket/warmup.pdf",
+   "file": "p/2-10-taylor-polynomials-ticket-1.pdf",
+   "hash": "dcd454740a8437d74cf29424e1d33bcc98fbb2ff290c46394fb350e0177a2853",
+   "bytes": 165692
+  }
+ ]
+}

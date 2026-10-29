@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0f766e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Adv Precalc">
+<title>Adv Precalc</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="top">
+  <div class="brand"><div class="mark">&theta;</div><div><b>Adv Precalc</b><span id="year">2026&ndash;27</span></div></div>
+  <span class="pill" id="netpill"><span class="dot"></span><span id="nettext">Checking&hellip;</span></span>
+</header>
+
+<main id="app">
+  <p id="bootmsg" class="muted">Loading&hellip;</p>
+  <section id="next"></section>
+  <section id="soon"></section>
+  <div id="tabs" role="tablist" hidden>
+    <button class="tab on" data-view="upcoming" role="tab">Upcoming</button>
+    <button class="tab" data-view="all" role="tab">Whole year</button>
+  </div>
+  <section id="list"></section>
+  <footer id="foot" hidden>
+    <button class="btn" id="savebtn">Save everything for offline</button>
+    <p class="muted small" id="savenote"></p>
+  </footer>
+</main>
+
+<div id="viewer" hidden>
+  <div id="vbar">
+    <button class="btn" id="vback">&larr; Back</button>
+    <span id="vtitle"></span>
+    <a id="vopen" target="_blank" rel="noopener">Open &#8599;</a>
+  </div>
+  <iframe id="vframe" title="Document"></iframe>
+</div>
+
+<div id="toast"><span id="toastmsg"></span><button id="toastbtn">Reload</button></div>
+
+<script src="app.js"></script>
+</body>
+</html>

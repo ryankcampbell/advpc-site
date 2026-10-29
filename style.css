@@ -1,0 +1,93 @@
+/* Adv Precalc — PWA shell.  Phone width is the default layout; no CDN, no
+   webfont (an offline-first app cannot depend on the network for its chrome). */
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#f8fafc; --panel:#fff; --line:#e2e8f0; --line-soft:#f1f5f9;
+  --ink:#0f172a; --ink-2:#475569; --ink-3:#64748b; --ink-4:#94a3b8;
+  --accent:#0f766e; --accent-bg:#f0fdfa; --accent-line:#99f6e4; --accent-ink:#115e59;
+  --quiz:#4f46e5; --quiz-bg:#eef2ff; --test:#b91c1c; --test-bg:#fef2f2;
+  --ok:#10b981; --ok-bg:#ecfdf5; --ok-line:#a7f3d0; --ok-ink:#047857;
+  --shadow:0 1px 2px rgba(15,23,42,.06);
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0b1220; --panel:#111a2b; --line:#1f2a3d; --line-soft:#162133;
+  --ink:#e5e7eb; --ink-2:#cbd5e1; --ink-3:#94a3b8; --ink-4:#64748b;
+  --accent:#2dd4bf; --accent-bg:#0f2a2a; --accent-line:#115e59; --accent-ink:#99f6e4;
+  --quiz:#a5b4fc; --quiz-bg:#1e1b4b; --test:#fca5a5; --test-bg:#3b0d0d;
+  --ok:#34d399; --ok-bg:#052e22; --ok-line:#065f46; --ok-ink:#6ee7b7;
+}}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom)}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:var(--accent);text-decoration:none}
+.muted{color:var(--ink-3)} .small{font-size:12px}
+
+#top{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:calc(10px + env(safe-area-inset-top)) 16px 10px;background:var(--panel);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px}
+.mark{width:30px;height:30px;border-radius:8px;background:var(--accent);color:#fff;display:grid;place-items:center;
+  font:italic 600 18px/1 Georgia,"Times New Roman",serif}
+@media (prefers-color-scheme:dark){.mark{color:#042f2e}}
+.brand b{display:block;font-size:14px;line-height:1.2}
+.brand span{font-size:11px;color:var(--ink-3)}
+.pill{display:flex;align-items:center;gap:6px;font-size:12px;padding:3px 10px;border-radius:999px;white-space:nowrap;
+  border:1px solid var(--ok-line);background:var(--ok-bg);color:var(--ok-ink)}
+.pill.off{border-color:var(--line);background:var(--line-soft);color:var(--ink-3)}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--ok)} .pill.off .dot{background:var(--ink-4)}
+
+#app{max-width:720px;margin:0 auto;padding:14px 16px 32px}
+
+/* next class */
+.hero{background:var(--panel);border:1px solid var(--accent-line);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow)}
+.hero .eyebrow{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.hero h2{margin:4px 0 2px;font-size:20px;line-height:1.25}
+.hero .sub{color:var(--ink-2);font-size:13px}
+.soon{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 2px}
+.chip{font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;white-space:nowrap}
+.chip.quiz{background:var(--quiz-bg);color:var(--quiz)} .chip.test{background:var(--test-bg);color:var(--test)}
+.chip.past{background:var(--line-soft);color:var(--ink-4);font-weight:500}
+
+#tabs{display:flex;gap:4px;margin:18px 0 6px;background:var(--line-soft);padding:3px;border-radius:10px}
+.tab{flex:1;padding:6px 0;border-radius:8px;font-size:13px;color:var(--ink-3)}
+.tab.on{background:var(--panel);color:var(--ink);font-weight:600;box-shadow:var(--shadow)}
+
+/* day list */
+.unit{margin:22px 0 8px;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3)}
+.brk{margin:8px 0;padding:6px 10px;font-size:12px;font-style:italic;color:var(--ink-3);border-left:3px solid var(--line)}
+.day{display:flex;gap:12px;padding:11px 12px;margin:6px 0;background:var(--panel);border:1px solid var(--line);
+  border-radius:12px;box-shadow:var(--shadow)}
+.day.today{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-bg)}
+.day.past{opacity:.6;box-shadow:none;background:transparent}
+.day.open{background:transparent;border-style:dashed;box-shadow:none}
+.date{flex:0 0 46px;font-weight:700;font-size:15px;font-variant-numeric:tabular-nums;padding-top:1px}
+.date small{display:block;font-size:10px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.05em}
+.body{flex:1 1 auto;min-width:0}
+.topic{font-weight:600;line-height:1.3}
+.meta{font-size:12px;color:var(--ink-3);margin-top:2px;display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.hw{font-size:13px;color:var(--ink-2);margin-top:5px}
+.hw b{font-weight:600;color:var(--ink-3);font-size:11px;text-transform:uppercase;letter-spacing:.04em;margin-right:4px}
+.mats{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.mat{font-size:13px;font-weight:600;padding:5px 11px;border-radius:8px;border:1px solid var(--accent-line);
+  background:var(--accent-bg);color:var(--accent-ink)}
+.mat.ext{background:transparent}
+.coming{font-size:12px;color:var(--ink-4);margin-top:6px;font-style:italic}
+
+.btn{padding:8px 14px;border-radius:9px;border:1px solid var(--line);background:var(--panel);font-size:13px;font-weight:600}
+#foot{margin-top:28px;text-align:center}
+
+/* document viewer */
+#viewer{position:fixed;inset:0;z-index:50;background:var(--bg);display:flex;flex-direction:column}
+#viewer[hidden]{display:none}
+#vbar{display:flex;align-items:center;gap:10px;padding:calc(8px + env(safe-area-inset-top)) 12px 8px;
+  background:var(--panel);border-bottom:1px solid var(--line)}
+#vtitle{flex:1;min-width:0;font-weight:600;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#vopen{font-size:13px;font-weight:600;white-space:nowrap}
+#vframe{flex:1;width:100%;border:0;background:#fff}
+
+#toast{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom));transform:translate(-50%,150%);
+  transition:transform .2s;background:var(--ink);color:var(--bg);padding:10px 14px;border-radius:10px;
+  display:flex;gap:12px;align-items:center;font-size:13px;z-index:60;max-width:calc(100% - 32px)}
+#toast.show{transform:translate(-50%,0)}
+#toastbtn{color:var(--accent-line);font-weight:700}
