@@ -36,12 +36,12 @@
   function mats(r) {
     const b = [];
     if (r.quarto) b.push(`<button class="mat" data-doc="${esc(docUrl(r.quarto))}" data-title="${esc(r.quarto.title || r.topic)}">Lecture</button>`);
-    // A PDF opens on its own, not in the iframe viewer: Android Chrome will not
-    // render a PDF inside an iframe.  Same origin, so the service worker still
-    // serves the saved copy offline.
+    // Everything opens in the in-app viewer.  Tickets are PDFs (data-pdf: see
+    // openDoc for the one exception); calc-site pages frame fine — GitHub Pages
+    // sends no X-Frame-Options — and keep their #section anchor.
     (r.tickets || []).forEach((t, i, a) =>
-      b.push(`<a class="mat" href="${esc(docUrl(t))}" target="_blank" rel="noopener">Entry ticket${a.length > 1 ? ' ' + (i + 1) : ''}</a>`));
-    if (r.calc) b.push(`<a class="mat ext" href="${esc(r.calc)}" target="_blank" rel="noopener">Calc lesson &#8599;</a>`);
+      b.push(`<button class="mat" data-doc="${esc(docUrl(t))}" data-pdf="1" data-title="Entry ticket · ${esc(md(r.date))}">Entry ticket${a.length > 1 ? ' ' + (i + 1) : ''}</button>`));
+    if (r.calc) b.push(`<button class="mat ext" data-doc="${esc(r.calc)}" data-title="Calc lesson · ${esc(r.sec)}">Calc lesson</button>`);
     if (b.length) return `<div class="mats">${b.join('')}</div>`;
     return r.kind === 'lesson' ? '<div class="coming">Materials coming</div>' : '';
   }
@@ -108,22 +108,38 @@
   }
 
   // ── viewer ──
-  function openDoc(url, title) {
+  // Android Chrome does not render a PDF inside an iframe (it shows a blank box
+  // or a download prompt), so there — and only there — a PDF opens in a new tab.
+  // Same origin, so the service worker still serves the saved copy offline.
+  const NO_PDF_FRAME = /Android/i.test(navigator.userAgent);
+
+  function openDoc(url, title, pdf) {
+    if (pdf && NO_PDF_FRAME) { window.open(url, '_blank', 'noopener'); return; }
     $('#vtitle').textContent = title;
     $('#vopen').href = url;
-    $('#vframe').src = url;
+    // A fresh iframe per document: re-pointing an existing iframe's src adds a
+    // joint-history entry, and then Back steps the frame back instead of closing.
+    const f = document.createElement('iframe');
+    f.id = 'vframe'; f.title = title; f.src = url;
+    $('#viewer').appendChild(f);
     $('#viewer').hidden = false;
     document.body.style.overflow = 'hidden';
     history.pushState({ doc: url }, '');
   }
   function closeDoc() {
     $('#viewer').hidden = true;
-    $('#vframe').src = 'about:blank';
+    const f = $('#vframe'); if (f) f.remove();
     document.body.style.overflow = '';
+  }
+  // Back always closes, even after in-frame navigation; then drop our entry.
+  function back() {
+    if ($('#viewer').hidden) return;
+    closeDoc();
+    if (history.state && history.state.doc) history.back();
   }
   document.addEventListener('click', e => {
     const b = e.target.closest('[data-doc]');
-    if (b) { openDoc(b.dataset.doc, b.dataset.title); return; }
+    if (b) { openDoc(b.dataset.doc, b.dataset.title, !!b.dataset.pdf); return; }
     const t = e.target.closest('.tab');
     if (t) {
       view = t.dataset.view;
@@ -132,9 +148,9 @@
       if (view === 'all') { const el = document.getElementById('d' + (days().find(r => r.date >= TODAY) || {}).date); if (el) el.scrollIntoView({ block: 'center' }); }
     }
   });
-  $('#vback').addEventListener('click', () => history.back());
+  $('#vback').addEventListener('click', back);
   addEventListener('popstate', () => { if (!$('#viewer').hidden) closeDoc(); });
-  addEventListener('keydown', e => { if (e.key === 'Escape' && !$('#viewer').hidden) history.back(); });
+  addEventListener('keydown', e => { if (e.key === 'Escape') back(); });
 
   // ── save for offline ──
   const allFiles = () => (IDX.files || []).map(docUrl);
