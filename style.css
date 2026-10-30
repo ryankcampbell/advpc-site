@@ -54,7 +54,11 @@ a{color:var(--accent);text-decoration:none}
 .tab.on{background:var(--panel);color:var(--ink);font-weight:600;box-shadow:var(--shadow)}
 
 /* day list */
-.unit{margin:22px 0 8px;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3)}
+.unit{display:flex;align-items:center;gap:8px;margin:14px 0 6px;padding:8px 0;min-height:44px;box-sizing:border-box;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3);cursor:pointer;list-style:none;-webkit-tap-highlight-color:transparent}
+.unit::-webkit-details-marker{display:none}
+.unit::before{content:'\25B8';font-size:13px;transition:transform .15s}
+.ufold[open]>.unit::before{transform:rotate(90deg)}
+.unit .n{margin-left:auto;font-weight:500;color:var(--ink-4)}
 .brk{margin:8px 0;padding:6px 10px;font-size:12px;font-style:italic;color:var(--ink-3);border-left:3px solid var(--line)}
 .day{display:flex;gap:12px;padding:11px 12px;margin:6px 0;background:var(--panel);border:1px solid var(--line);
   border-radius:12px;box-shadow:var(--shadow)}
@@ -84,7 +88,11 @@ a{color:var(--accent);text-decoration:none}
   background:var(--panel);border-bottom:1px solid var(--line)}
 #vtitle{flex:1;min-width:0;font-weight:600;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #vopen{font-size:13px;font-weight:600;white-space:nowrap}
-#vframe{flex:1;width:100%;border:0;background:#fff}
+#vframe{flex:1;width:100%;min-height:0;border:0;background:#fff}
+#vopen[hidden]{display:none}
+#vframe.pdfview{overflow:auto;-webkit-overflow-scrolling:touch;background:#525659;padding:8px;box-sizing:border-box}
+.pdfview canvas{display:block;width:100%;height:auto;margin:0 auto 8px;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.35)}
+.pdfmsg{color:#e5e7eb;text-align:center;padding:40px 16px;font-size:14px}
 
 #toast{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom));transform:translate(-50%,150%);
   transition:transform .2s;background:var(--ink);color:var(--bg);padding:10px 14px;border-radius:10px;

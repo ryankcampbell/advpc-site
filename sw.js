@@ -1,7 +1,7 @@
 /* Adv Precalc — service worker (copied from calc's, caches renamed).
 
    CACHE_VERSION IS STAMPED AT DEPLOY TIME by deploy.py, with a hash of
-   index.html + style.css + app.js + manifest.webmanifest.  Do not hand-edit it
+   every shell file (lib/ included).  Do not hand-edit it
    and do not rely on the value below -- it is a placeholder in the source copy.
 
    Why: a browser installs a new worker only when THIS FILE's bytes change.
@@ -22,11 +22,13 @@
    is no stale-copy problem to detect and no hash bookkeeping in here.  Old
    versions are swept when a new hash for the same path is cached.
 */
-const CACHE_VERSION = '2fe5ee0aafa0';
+const CACHE_VERSION = 'd86cab978a06';
 const SHELL = `advpc-shell-${CACHE_VERSION}`;
 const DOCS = 'advpc-docs-v1';          // survives shell upgrades — documents are content-addressed
 const SHELL_FILES = ['./', 'index.html', 'style.css', 'app.js', 'index.json',
-                     'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png'];
+                     'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png',
+                     // PDF.js draws PDFs on iPhone, iPad and Android, where an iframe cannot (app.js).
+                     'lib/pdf.min.js', 'lib/pdf.worker.min.js'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(SHELL)

@@ -14,6 +14,10 @@
 
   let IDX = null, view = 'upcoming';
   try { view = localStorage.getItem('advpc-view') || 'upcoming'; } catch (e) {}
+  // Units the student has opened or closed on this device.  A unit never touched
+  // follows the default (the current unit open), so the default moves with the year.
+  let unitState = {};
+  try { unitState = JSON.parse(localStorage.getItem('advpc-units')) || {}; } catch (e) {}
 
   // ── network status ──
   function setNet(online, cached) {
@@ -37,8 +41,8 @@
     const b = [];
     if (r.quarto) b.push(`<button class="mat" data-doc="${esc(docUrl(r.quarto))}" data-title="${esc(r.quarto.title || r.topic)}">Lecture</button>`);
     // Everything opens in the in-app viewer.  Tickets are PDFs (data-pdf: see
-    // openDoc for the one exception); calc-site pages frame fine — GitHub Pages
-    // sends no X-Frame-Options — and keep their #section anchor.
+    // the viewer); calc-site pages frame fine — GitHub Pages sends no
+    // X-Frame-Options — and keep their #section anchor.
     (r.tickets || []).forEach((t, i, a) =>
       b.push(`<button class="mat" data-doc="${esc(docUrl(t))}" data-pdf="1" data-title="Entry ticket · ${esc(md(r.date))}">Entry ticket${a.length > 1 ? ' ' + (i + 1) : ''}</button>`));
     if (r.calc) b.push(`<button class="mat ext" data-doc="${esc(r.calc)}" data-title="Calc lesson · ${esc(r.sec)}">Calc lesson</button>`);
@@ -82,20 +86,29 @@
   }
 
   function renderList() {
+    const nextDay = days().find(r => r.date >= TODAY && r.kind !== 'open');
+    const current = nextDay ? nextDay.unit : null;
     const out = [];
-    let pendingUnit = null, lastUnit = null;
+    let u = null, body = [], n = 0;
+    const flush = () => {
+      if (u && n) {
+        const open = u.unit in unitState ? unitState[u.unit] : u.unit === current;
+        out.push(`<details class="ufold" data-unit="${u.unit}"${open ? ' open' : ''}>
+          <summary class="unit"><span>Unit ${u.unit} · ${esc(u.title)}</span><span class="n">${n}</span></summary>
+          ${body.join('')}</details>`);
+      }
+      body = []; n = 0;
+    };
     for (const r of IDX.rows) {
-      if (r.kind === 'unit') { pendingUnit = r; continue; }
+      if (r.kind === 'unit') { flush(); u = r; continue; }
       if (r.kind === 'break') {             // breaks carry no date: whole-year view only
-        if (view === 'all') out.push(`<div class="brk">${esc(r.text)}</div>`);
+        if (view === 'all') body.push(`<div class="brk">${esc(r.text)}</div>`);
         continue;
       }
-      if (view === 'upcoming' && r.date < TODAY) { if (pendingUnit) { lastUnit = pendingUnit; pendingUnit = null; } continue; }
-      const u = pendingUnit || (view === 'upcoming' && out.length === 0 ? lastUnit : null);
-      if (u) out.push(`<div class="unit">Unit ${u.unit} · ${esc(u.title)}</div>`);
-      pendingUnit = null;
-      out.push(dayCard(r));
+      if (view === 'upcoming' && r.date < TODAY) continue;
+      body.push(dayCard(r)); n++;
     }
+    flush();
     $('#list').innerHTML = out.join('') || '<p class="muted">No class days left.</p>';
     document.querySelectorAll('.tab').forEach(t => t.classList.toggle('on', t.dataset.view === view));
   }
@@ -108,23 +121,55 @@
   }
 
   // ── viewer ──
-  // Android Chrome does not render a PDF inside an iframe (it shows a blank box
-  // or a download prompt), so there — and only there — a PDF opens in a new tab.
-  // Same origin, so the service worker still serves the saved copy offline.
-  const NO_PDF_FRAME = /Android/i.test(navigator.userAgent);
+  // PDFs on phones and tablets: an iframe shows only page 1 on iPhone and iPad and
+  // nothing on Android, and a new tab strands the installed home-screen app on a
+  // bare PDF with no way back (Ryan, 2026-10-30: "still no return path on app").
+  // So there the viewer draws every page itself with the bundled PDF.js (lib/,
+  // precached by sw.js, works offline).  ?pdfjs=1 forces this on any browser.
+  // iPadOS reports itself as a Mac; touch points give it away.
+  const IOS = /iP(hone|ad|od)/.test(navigator.userAgent) ||
+              (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const PDFJS = IOS || /Android/i.test(navigator.userAgent) || /[?&]pdfjs=1\b/.test(location.search);
+  const STANDALONE = navigator.standalone === true || matchMedia('(display-mode: standalone)').matches;
 
   function openDoc(url, title, pdf) {
-    if (pdf && NO_PDF_FRAME) { window.open(url, '_blank', 'noopener'); return; }
     $('#vtitle').textContent = title;
     $('#vopen').href = url;
-    // A fresh iframe per document: re-pointing an existing iframe's src adds a
+    $('#vopen').hidden = IOS && STANDALONE;        // a new tab there is the same dead end
+    // A fresh frame per document: re-pointing an existing iframe's src adds a
     // joint-history entry, and then Back steps the frame back instead of closing.
-    const f = document.createElement('iframe');
-    f.id = 'vframe'; f.title = title; f.src = url;
+    const drawn = pdf && PDFJS;
+    const f = document.createElement(drawn ? 'div' : 'iframe');
+    f.id = 'vframe'; f.title = title;
+    if (drawn) f.className = 'pdfview'; else f.src = url;
     $('#viewer').appendChild(f);
+    if (drawn) drawPDF(f, url);
     $('#viewer').hidden = false;
     document.body.style.overflow = 'hidden';
     history.pushState({ doc: url }, '');
+  }
+  /** Draw every page of a PDF into `box`, page by page, at the box's width. */
+  async function drawPDF(box, url) {
+    box.innerHTML = '<p class="pdfmsg">Opening&hellip;</p>';
+    try {
+      const lib = await import('./lib/pdf.min.js');
+      lib.GlobalWorkerOptions.workerSrc = 'lib/pdf.worker.min.js';
+      const pdf = await lib.getDocument({ url, disableRange: true, disableStream: true }).promise;
+      box.innerHTML = '';
+      const dpr = Math.min(window.devicePixelRatio || 1, 3);
+      const width = Math.max(box.clientWidth - 16, 280);
+      for (let n = 1; n <= pdf.numPages && box.isConnected; n++) {
+        const page = await pdf.getPage(n);
+        const vp = page.getViewport({ scale: (width * dpr) / page.getViewport({ scale: 1 }).width });
+        const c = document.createElement('canvas');
+        c.width = Math.floor(vp.width); c.height = Math.floor(vp.height);
+        c.setAttribute('aria-label', `Page ${n} of ${pdf.numPages}`);
+        box.appendChild(c);
+        await page.render({ canvasContext: c.getContext('2d'), viewport: vp }).promise;
+      }
+    } catch (e) {
+      box.innerHTML = '<p class="pdfmsg">This PDF could not be shown. Connect to the internet once, then try again.</p>';
+    }
   }
   function closeDoc() {
     $('#viewer').hidden = true;
@@ -140,12 +185,19 @@
   document.addEventListener('click', e => {
     const b = e.target.closest('[data-doc]');
     if (b) { openDoc(b.dataset.doc, b.dataset.title, !!b.dataset.pdf); return; }
+    const s = e.target.closest('summary.unit');
+    if (s) {                                 // click fires before the fold flips
+      const d = s.parentElement;
+      unitState[d.dataset.unit] = !d.open;
+      try { localStorage.setItem('advpc-units', JSON.stringify(unitState)); } catch (err) {}
+      return;
+    }
     const t = e.target.closest('.tab');
     if (t) {
       view = t.dataset.view;
       try { localStorage.setItem('advpc-view', view); } catch (err) {}
       renderList();
-      if (view === 'all') { const el = document.getElementById('d' + (days().find(r => r.date >= TODAY) || {}).date); if (el) el.scrollIntoView({ block: 'center' }); }
+      if (view === 'all') { const el = document.getElementById('d' + (days().find(r => r.date >= TODAY) || {}).date); if (el && el.closest('details').open) el.scrollIntoView({ block: 'center' }); }
     }
   });
   $('#vback').addEventListener('click', back);
