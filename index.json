@@ -2,7 +2,7 @@
  "version": 1,
  "title": "Adv Precalc",
  "year": "2026-27",
- "generated": "2026-10-30T18:10:00+00:00",
+ "generated": "2026-11-04T17:10:26+00:00",
  "rows": [
   {
    "kind": "unit",
@@ -309,33 +309,61 @@
    "kind": "lesson",
    "date": "2026-11-04",
    "unit": 2,
-   "sec": "§5.3",
-   "topic": "Graphing sine and cosine: practice",
-   "hw": "",
+   "sec": "§5.4",
+   "topic": "Secant and cosecant graphs",
+   "hw": "p. 449: 7, 15",
    "assess": "",
    "quarto": {
-    "file": "q/3-3-sin-cos-graph.html",
-    "hash": "c51b154c1597758410542d31c48a947ff7be1552d99ca0efea1d17627cca0cab",
-    "title": "§3.3 — Graphs of Sine and Cosine"
-   }
+    "file": "q/3-4-sin-cos-other-trig-graph.html",
+    "hash": "6092645ca1160f5efa7b4ef6852873d7c6a82ea09165036cdb57828c699caef4",
+    "title": "§3.4 — Graphs of the Other Trig Functions"
+   },
+   "tickets": [
+    {
+     "file": "p/3-4-sin-cos-other-trig-graph-ticket-1.pdf",
+     "hash": "bd8b61537515c3727ddbfc74b9afb37a758f7bac8893ccbefeb087527363372f"
+    }
+   ]
   },
   {
    "kind": "lesson",
    "date": "2026-11-06",
    "unit": 2,
    "sec": "§5.4",
-   "topic": "More trig graphs",
-   "hw": "",
-   "assess": ""
+   "topic": "Tangent graph",
+   "hw": "p. 449: 1, 5, 9, 11, 13",
+   "assess": "",
+   "quarto": {
+    "file": "q/3-4-sin-cos-other-trig-graph.html",
+    "hash": "6092645ca1160f5efa7b4ef6852873d7c6a82ea09165036cdb57828c699caef4",
+    "title": "§3.4 — Graphs of the Other Trig Functions"
+   },
+   "tickets": [
+    {
+     "file": "p/3-4-sin-cos-other-trig-graph-ticket-2.pdf",
+     "hash": "6bc810c8f1323ef0b9e9c8767eb8e0ae558f374942df3dd71e9f5b67e59b5a63"
+    }
+   ]
   },
   {
    "kind": "lesson",
    "date": "2026-11-10",
    "unit": 2,
    "sec": "§5.4",
-   "topic": "Tangent and cotangent graphs",
-   "hw": "",
-   "assess": ""
+   "topic": "Graphing the other trig functions: examples",
+   "hw": "p. 449: 3, 21, 33",
+   "assess": "",
+   "quarto": {
+    "file": "q/3-4-sin-cos-other-trig-graph.html",
+    "hash": "6092645ca1160f5efa7b4ef6852873d7c6a82ea09165036cdb57828c699caef4",
+    "title": "§3.4 — Graphs of the Other Trig Functions"
+   },
+   "tickets": [
+    {
+     "file": "p/3-4-sin-cos-other-trig-graph-ticket-3.pdf",
+     "hash": "32ac5078c9e88c9c5b9f3ddccbedd8e01e6c616faba7ac93b40e6a5d092ebfa9"
+    }
+   ]
   },
   {
    "kind": "break",
@@ -1175,6 +1203,31 @@
    "file": "p/3-3-sin-cos-graph-ticket-1.pdf",
    "hash": "caa55f441a0182a7053842ed4dc330652db9bd916d3b5755ea52b53a5943b1f2",
    "bytes": 83993
+  },
+  {
+   "key": "Days/Unit 3- Trig/3.4-Sin:cos other trig graph/quarto/3-4-other-trig-graphs.html",
+   "file": "q/3-4-sin-cos-other-trig-graph.html",
+   "hash": "6092645ca1160f5efa7b4ef6852873d7c6a82ea09165036cdb57828c699caef4",
+   "bytes": 3660269,
+   "title": "§3.4 — Graphs of the Other Trig Functions"
+  },
+  {
+   "key": "Days/Unit 3- Trig/3.4-Sin:cos other trig graph/ticket/warmup.pdf",
+   "file": "p/3-4-sin-cos-other-trig-graph-ticket-1.pdf",
+   "hash": "bd8b61537515c3727ddbfc74b9afb37a758f7bac8893ccbefeb087527363372f",
+   "bytes": 105379
+  },
+  {
+   "key": "Days/Unit 3- Trig/3.4-Sin:cos other trig graph/ticket/warmup_day2.pdf",
+   "file": "p/3-4-sin-cos-other-trig-graph-ticket-2.pdf",
+   "hash": "6bc810c8f1323ef0b9e9c8767eb8e0ae558f374942df3dd71e9f5b67e59b5a63",
+   "bytes": 107249
+  },
+  {
+   "key": "Days/Unit 3- Trig/3.4-Sin:cos other trig graph/ticket/warmup_day3.pdf",
+   "file": "p/3-4-sin-cos-other-trig-graph-ticket-3.pdf",
+   "hash": "32ac5078c9e88c9c5b9f3ddccbedd8e01e6c616faba7ac93b40e6a5d092ebfa9",
+   "bytes": 122722
   },
   {
    "key": "Days/Unit 3- Trig/3.6-radian/warmup/warmup.pdf",
