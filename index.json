@@ -2,7 +2,7 @@
  "version": 1,
  "title": "Adv Precalc",
  "year": "2026-27",
- "generated": "2026-11-10T00:42:09+00:00",
+ "generated": "2026-11-10T00:43:05+00:00",
  "rows": [
   {
    "kind": "unit",
@@ -384,7 +384,13 @@
    "sec": "§5.5",
    "topic": "Inverse trig functions",
    "hw": "",
-   "assess": ""
+   "assess": "",
+   "tickets": [
+    {
+     "file": "p/3-5-inverse-trig-ticket-1.pdf",
+     "hash": "9d508a83047aa9c2ffeec9c17bc1ae835505cfece70ebc4211d81a91fbf6e083"
+    }
+   ]
   },
   {
    "kind": "lesson",
@@ -1248,6 +1254,12 @@
    "file": "p/3-4-sin-cos-other-trig-graph-ticket-5.pdf",
    "hash": "a600e381e4a245e8a0fad6ee2f8b92f309e0384f3725f64546f4a4ff015b9345",
    "bytes": 72874
+  },
+  {
+   "key": "Days/Unit 3- Trig/3.5-Inverse Trig/warmup/entry_ticket.pdf",
+   "file": "p/3-5-inverse-trig-ticket-1.pdf",
+   "hash": "9d508a83047aa9c2ffeec9c17bc1ae835505cfece70ebc4211d81a91fbf6e083",
+   "bytes": 105412
   },
   {
    "key": "Days/Unit 3- Trig/3.6-radian/warmup/warmup.pdf",
