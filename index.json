@@ -2,7 +2,7 @@
  "version": 1,
  "title": "Adv Precalc",
  "year": "2026-27",
- "generated": "2026-11-04T19:21:20+00:00",
+ "generated": "2026-11-10T00:42:09+00:00",
  "rows": [
   {
    "kind": "unit",
@@ -321,7 +321,7 @@
    "tickets": [
     {
      "file": "p/3-4-sin-cos-other-trig-graph-ticket-1.pdf",
-     "hash": "bd8b61537515c3727ddbfc74b9afb37a758f7bac8893ccbefeb087527363372f"
+     "hash": "f783b924254e60c44d919033de1c06c0addbce7a02fc4cf467c4956366d87922"
     }
    ]
   },
@@ -340,7 +340,7 @@
    },
    "tickets": [
     {
-     "file": "p/3-4-sin-cos-other-trig-graph-ticket-2.pdf",
+     "file": "p/3-4-sin-cos-other-trig-graph-ticket-3.pdf",
      "hash": "6bc810c8f1323ef0b9e9c8767eb8e0ae558f374942df3dd71e9f5b67e59b5a63"
     }
    ]
@@ -360,8 +360,16 @@
    },
    "tickets": [
     {
-     "file": "p/3-4-sin-cos-other-trig-graph-ticket-3.pdf",
+     "file": "p/3-4-sin-cos-other-trig-graph-ticket-2.pdf",
+     "hash": "bd8b61537515c3727ddbfc74b9afb37a758f7bac8893ccbefeb087527363372f"
+    },
+    {
+     "file": "p/3-4-sin-cos-other-trig-graph-ticket-4.pdf",
      "hash": "32ac5078c9e88c9c5b9f3ddccbedd8e01e6c616faba7ac93b40e6a5d092ebfa9"
+    },
+    {
+     "file": "p/3-4-sin-cos-other-trig-graph-ticket-5.pdf",
+     "hash": "a600e381e4a245e8a0fad6ee2f8b92f309e0384f3725f64546f4a4ff015b9345"
     }
    ]
   },
@@ -1212,22 +1220,34 @@
    "title": "§3.4 — Graphs of the Other Trig Functions"
   },
   {
-   "key": "Days/Unit 3- Trig/3.4-Sin:cos other trig graph/ticket/warmup.pdf",
+   "key": "Days/Unit 3- Trig/3.4-Sin:cos other trig graph/ticket/entry_ticket.pdf",
    "file": "p/3-4-sin-cos-other-trig-graph-ticket-1.pdf",
+   "hash": "f783b924254e60c44d919033de1c06c0addbce7a02fc4cf467c4956366d87922",
+   "bytes": 83835
+  },
+  {
+   "key": "Days/Unit 3- Trig/3.4-Sin:cos other trig graph/ticket/warmup.pdf",
+   "file": "p/3-4-sin-cos-other-trig-graph-ticket-2.pdf",
    "hash": "bd8b61537515c3727ddbfc74b9afb37a758f7bac8893ccbefeb087527363372f",
    "bytes": 105379
   },
   {
    "key": "Days/Unit 3- Trig/3.4-Sin:cos other trig graph/ticket/warmup_day2.pdf",
-   "file": "p/3-4-sin-cos-other-trig-graph-ticket-2.pdf",
+   "file": "p/3-4-sin-cos-other-trig-graph-ticket-3.pdf",
    "hash": "6bc810c8f1323ef0b9e9c8767eb8e0ae558f374942df3dd71e9f5b67e59b5a63",
    "bytes": 107249
   },
   {
    "key": "Days/Unit 3- Trig/3.4-Sin:cos other trig graph/ticket/warmup_day3.pdf",
-   "file": "p/3-4-sin-cos-other-trig-graph-ticket-3.pdf",
+   "file": "p/3-4-sin-cos-other-trig-graph-ticket-4.pdf",
    "hash": "32ac5078c9e88c9c5b9f3ddccbedd8e01e6c616faba7ac93b40e6a5d092ebfa9",
    "bytes": 122722
+  },
+  {
+   "key": "Days/Unit 3- Trig/3.4-Sin:cos other trig graph/ticket/ws4.3.pdf",
+   "file": "p/3-4-sin-cos-other-trig-graph-ticket-5.pdf",
+   "hash": "a600e381e4a245e8a0fad6ee2f8b92f309e0384f3725f64546f4a4ff015b9345",
+   "bytes": 72874
   },
   {
    "key": "Days/Unit 3- Trig/3.6-radian/warmup/warmup.pdf",
