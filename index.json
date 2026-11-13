@@ -2,7 +2,7 @@
  "version": 1,
  "title": "Adv Precalc",
  "year": "2026-27",
- "generated": "2026-11-10T00:44:34+00:00",
+ "generated": "2026-11-13T00:09:40+00:00",
  "rows": [
   {
    "kind": "unit",
@@ -409,7 +409,13 @@
     "file": "q/3-5-inverse-trig.html",
     "hash": "c34cb95e7826d755dabe5545f3e3e36fc6459cb6416f0fca906fecf6b5cf18f9",
     "title": "§3.5 — Inverse Trig Functions"
-   }
+   },
+   "tickets": [
+    {
+     "file": "p/3-5-inverse-trig-ticket-2.pdf",
+     "hash": "85b158cca006d1776ef24f0fe86d70ef59601dc7816c8ba53317cb4a59637353"
+    }
+   ]
   },
   {
    "kind": "quiz",
@@ -432,6 +438,11 @@
    "topic": "Radians",
    "hw": "",
    "assess": "",
+   "quarto": {
+    "file": "q/3-6-radian.html",
+    "hash": "d005408718a38f5109256180c5993485340f993a8b124b6748a728576c6f77dc",
+    "title": "§3.6 — Radians and Right Triangles"
+   },
    "tickets": [
     {
      "file": "p/3-6-radian-ticket-1.pdf",
@@ -1277,6 +1288,19 @@
    "file": "p/3-5-inverse-trig-ticket-1.pdf",
    "hash": "9d508a83047aa9c2ffeec9c17bc1ae835505cfece70ebc4211d81a91fbf6e083",
    "bytes": 105412
+  },
+  {
+   "key": "Days/Unit 3- Trig/3.5-Inverse Trig/warmup/entry_ticket_day2.pdf",
+   "file": "p/3-5-inverse-trig-ticket-2.pdf",
+   "hash": "85b158cca006d1776ef24f0fe86d70ef59601dc7816c8ba53317cb4a59637353",
+   "bytes": 109441
+  },
+  {
+   "key": "Days/Unit 3- Trig/3.6-radian/quarto/3-6-radians.html",
+   "file": "q/3-6-radian.html",
+   "hash": "d005408718a38f5109256180c5993485340f993a8b124b6748a728576c6f77dc",
+   "bytes": 3668185,
+   "title": "§3.6 — Radians and Right Triangles"
   },
   {
    "key": "Days/Unit 3- Trig/3.6-radian/warmup/warmup.pdf",
